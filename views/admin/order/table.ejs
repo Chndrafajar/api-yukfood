@@ -1,0 +1,42 @@
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+  <div class="card-header py-3">
+    <h6 class="m-0 font-weight-bold" style="color: #1abc9c">DataTables Example</h6>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Invoice</th>
+            <th>OrderYukFood</th>
+            <th>Title</th>
+            <th>Name Member</th>
+            <th>Name Bank</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for(let i = 0; i < order.length; i++){ %>
+          <tr>
+            <td><%= i + 1 %></td>
+            <td><%= order[i].invoice %></td>
+            <td><%= order[i].orderYukFood %></td>
+            <td><%= order[i].itemId.title %></td>
+            <td><%= order[i].memberId.firstName %> <%= order[i].memberId.lastName %></td>
+            <td><%= order[i].bankId.nameBank %></td>
+            <td><%= order[i].payments.status %></td>
+            <td>
+              <a href="/admin/order/<%= order[i].id %>" class="btn btn-success btn-circle btn-sm">
+                <i class="fas fa-eye"></i>
+              </a>
+            </td>
+          </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
