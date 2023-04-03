@@ -16,7 +16,7 @@ const itemSchema = new mongoose.Schema({
   },
   unit: {
     type: String,
-    default: 'yukood',
+    default: 'yukfood',
   },
   sumOrder: {
     type: Number,
