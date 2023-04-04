@@ -26,7 +26,7 @@
             <td><%= order[i].orderYukFood %></td>
             <td><%= order[i].itemId.title %></td>
             <td><%= order[i].memberId.firstName %> <%= order[i].memberId.lastName %></td>
-            <td><%= order[i].bankId.nameBank %></td>
+            <td><%= order[i].payments.bankFrom %></td>
             <td><%= order[i].payments.status %></td>
             <td>
               <a href="/admin/order/<%= order[i].id %>" class="btn btn-success btn-circle btn-sm">

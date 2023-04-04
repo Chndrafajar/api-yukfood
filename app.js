@@ -9,7 +9,7 @@ const flash = require('connect-flash');
 
 //import mongoose
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://yukfood:apiyukfood@cluster0.lwalar5.mongodb.net/db_yukfood?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false });
+mongoose.connect('mongodb://127.0.0.1:27017/db_yukfood', { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false });
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
