@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 
 // Connect to MongoDB via Mongoose
 seeder.connect(
-  'mongodb://localhost:27017/db_yukfood',
+  'mongodb+srv://chandrafajar:Pemalang224@cluster0.dnjjlqh.mongodb.net/db_yukfood?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
     useCreateIndex: true,
