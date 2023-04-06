@@ -18,7 +18,7 @@ module.exports = {
         .limit(4)
         .populate({
           path: 'itemId',
-          select: '_id title unit imageId',
+          select: '_id title unit price imageId',
           perDocumentLimit: 4,
           populate: {
             path: 'imageId',
