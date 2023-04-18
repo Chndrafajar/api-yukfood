@@ -6,7 +6,7 @@ module.exports = {
     try {
       const mostPopular = await Item.find()
         .select('_id title price isPopular unit imageId')
-        .limit(5)
+        .limit(4)
         .populate({
           path: 'imageId',
           select: '_id imageUrl ',
